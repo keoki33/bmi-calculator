@@ -135,12 +135,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="result_background" translatesAutoresizingMaskIntoConstraints="NO" id="OwB-Gr-By2">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="result_background" translatesAutoresizingMaskIntoConstraints="NO" id="OwB-Gr-By2">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ser-cU-ZTK">
-                                <rect key="frame" x="88.5" y="359.5" width="236" height="177.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ser-cU-ZTK">
+                                <rect key="frame" x="89" y="359.5" width="236" height="177.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="YOUR RESULT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2C-4m-RrR">
                                         <rect key="frame" x="0.0" y="0.0" width="236" height="42"/>
@@ -161,13 +160,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177.5" id="eFZ-FT-h90"/>
+                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibP-cv-4yW">
-                                <rect key="frame" x="20" y="811" width="374" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibP-cv-4yW">
+                                <rect key="frame" x="132" y="816" width="150" height="36"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="rdZ-hV-3od"/>
+                                    <constraint firstAttribute="width" constant="150" id="tJ1-XU-r4p"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="RECALCULATE">
+                                <state key="normal" title=" RECALCULATE ">
                                     <color key="titleColor" red="0.4549019608" green="0.44705882349999998" blue="0.82352941180000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -180,11 +185,23 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="uhj-wm-fzz"/>
                         <color key="backgroundColor" red="0.19980379940000001" green="0.48169642689999997" blue="0.77313679459999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ibP-cv-4yW" firstAttribute="centerX" secondItem="HHh-MX-RY3" secondAttribute="centerX" id="23B-cO-s20"/>
+                            <constraint firstItem="OwB-Gr-By2" firstAttribute="leading" secondItem="HHh-MX-RY3" secondAttribute="leading" id="4dm-4Y-tdZ"/>
+                            <constraint firstItem="ser-cU-ZTK" firstAttribute="centerX" secondItem="HHh-MX-RY3" secondAttribute="centerX" id="9wR-BA-r9K"/>
+                            <constraint firstAttribute="bottom" secondItem="OwB-Gr-By2" secondAttribute="bottom" id="B10-Fd-FJ5"/>
+                            <constraint firstAttribute="trailing" secondItem="OwB-Gr-By2" secondAttribute="trailing" id="UQ1-ee-67U"/>
+                            <constraint firstItem="uhj-wm-fzz" firstAttribute="bottom" secondItem="ibP-cv-4yW" secondAttribute="bottom" constant="10" id="Xwd-YK-qNd"/>
+                            <constraint firstItem="OwB-Gr-By2" firstAttribute="top" secondItem="HHh-MX-RY3" secondAttribute="top" id="ZKN-hc-feA"/>
+                            <constraint firstItem="OwB-Gr-By2" firstAttribute="centerY" secondItem="HHh-MX-RY3" secondAttribute="centerY" id="kPL-Rc-HxK"/>
+                            <constraint firstItem="ser-cU-ZTK" firstAttribute="centerY" secondItem="OwB-Gr-By2" secondAttribute="centerY" id="qs2-yJ-gI4"/>
+                            <constraint firstItem="OwB-Gr-By2" firstAttribute="centerX" secondItem="HHh-MX-RY3" secondAttribute="centerX" id="rPt-k4-x18"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELc-Va-I6V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="962" y="138"/>
+            <point key="canvasLocation" x="211" y="138"/>
         </scene>
     </scenes>
     <resources>

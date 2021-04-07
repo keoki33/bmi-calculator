@@ -15,13 +15,10 @@ class ViewController: UIViewController {
     }
 
     @IBAction func heightSliderChanged(_ sender: UISlider) {
-        print(sender.value)
+        print(String(format: "%.2f", sender.value))
     }
-    
-    
+
     @IBAction func weightSliderChanged(_ sender: UISlider) {
         print(sender.value)
     }
-    
-    
 }

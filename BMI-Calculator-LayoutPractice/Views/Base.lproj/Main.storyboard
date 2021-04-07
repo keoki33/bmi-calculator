@@ -128,6 +128,10 @@
                             <constraint firstAttribute="trailing" secondItem="BbH-8h-eD3" secondAttribute="trailing" constant="20" id="z7C-2y-rSE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="heightLabel" destination="onR-F4-ZbV" id="kUR-ov-xh1"/>
+                        <outlet property="weightLabel" destination="YIh-Wr-wDN" id="hXM-Wk-bys"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
